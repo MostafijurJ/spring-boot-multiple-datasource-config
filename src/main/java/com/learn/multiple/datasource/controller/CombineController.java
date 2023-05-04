@@ -31,6 +31,7 @@ public class CombineController {
     @GetMapping(value = "/create")
     public void createCollegeInfo(){
         CollegeInfo collegeInfo = new CollegeInfo();
+        //SDK not found
         collegeInfo.setName("SET_NAME");
         collegeInfoRepository.save(collegeInfo);
     }
